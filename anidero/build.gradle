@@ -36,21 +36,8 @@ dependencies {
   implementation androidx.recyclerview
   implementation androidx.transition
 
-  // Do not ugprade to 2.0 because it will bring in Kotlin as a transitive dependency.
-  implementation("com.squareup.okio:okio:1.17.4")
+  implementation 'com.squareup.okio:okio:2.6.0'
   annotationProcessor "com.uber.nullaway:nullaway:0.7.5"
-}
-
-task sourcesJar(type: Jar) {
-  from android.sourceSets.main.java.srcDirs
-  classifier = 'sources'
-}
-
-task javadoc(type: Javadoc) {
-  source = android.sourceSets.main.java.srcDirs
-  configurations.implementation.setCanBeResolved(true)
-  classpath += project.files(android.getBootClasspath().join(File.pathSeparator)) + configurations.implementation
-  failOnError false
 }
 
 apply from: "${rootProject.projectDir}/anidero/maven-push.gradle"
