@@ -1,1 +1,1 @@
-include ':sample', ':lottie'
+include ':sample', ':anidero'

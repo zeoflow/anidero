@@ -4,7 +4,7 @@ android {
 	compileSdkVersion rootProject.ext.compileSdkVersion
 	buildToolsVersion rootProject.ext.buildToolsVersion
 	defaultConfig {
-		applicationId "com.zeoflow.core"
+		applicationId "com.zeoflow.anidero"
 		minSdkVersion rootProject.ext.minSdkVersion
 		targetSdkVersion rootProject.ext.targetSdkVersion
 		versionCode rootProject.ext.versionCode
@@ -31,9 +31,15 @@ android {
 
 dependencies {
 	implementation fileTree(dir: "libs", include: ["*.jar"])
-	implementation 'androidx.appcompat:appcompat:1.2.0'
-	implementation 'androidx.constraintlayout:constraintlayout:2.0.0'
 
-	implementation project(':z-core')
-//	implementation zeoflow.z_core
+	implementation androidx.appcompat
+	implementation androidx.browser
+	implementation androidx.cardview
+	implementation androidx.constraintlayout
+	implementation androidx.exifinterface
+	implementation androidx.recyclerview
+	implementation androidx.transition
+
+	implementation project(':anidero')
+
 }

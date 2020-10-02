@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="anideroAnimationViewStyle" format="reference" />
+
+    <declare-styleable name="AnideroAnimationView">
+        <attr name="anidero_fileName" format="string" />
+        <attr name="anidero_rawRes" format="reference" />
+        <attr name="anidero_url" format="string" />
+        <attr name="anidero_fallbackRes" format="reference" />
+        <attr name="anidero_autoPlay" format="boolean" />
+        <attr name="anidero_loop" format="boolean" />
+        <attr name="anidero_repeatMode" format="enum">
+            <enum name="restart" value="1" />
+            <enum name="reverse" value="2" />
+        </attr>
+        <attr name="anidero_repeatCount" format="integer" />
+        <attr name="anidero_imageAssetsFolder" format="string" />
+        <attr name="anidero_progress" format="float" />
+        <attr name="anidero_enableMergePathsForKitKatAndAbove" format="boolean" />
+        <attr name="anidero_colorFilter" format="color" />
+        <attr name="anidero_scale" format="float" />
+        <attr name="anidero_speed" format="float" />
+        <attr name="anidero_cacheComposition" format="boolean" />
+        <!-- These values must be kept in sync with the RenderMode enum -->
+        <attr name="anidero_renderMode" format="enum">
+            <enum name="automatic" value="0" />
+            <enum name="hardware" value="1" />
+            <enum name="software" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>
