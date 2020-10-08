@@ -6,8 +6,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.zeoflow.anidero.AnideroAnimationView;
+import com.zeoflow.compat.ActivityCore;
 
-public class MainActivity extends AppCompatActivity
+public class MainActivity extends ActivityCore
 {
 
     @Override

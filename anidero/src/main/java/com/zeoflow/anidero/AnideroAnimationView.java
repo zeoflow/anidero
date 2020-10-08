@@ -23,7 +23,6 @@ import androidx.annotation.MainThread;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RawRes;
-import androidx.appcompat.widget.AppCompatImageView;
 import androidx.core.view.ViewCompat;
 
 import com.zeoflow.anidero.model.KeyPath;
@@ -33,6 +32,7 @@ import com.zeoflow.anidero.utils.Utils;
 import com.zeoflow.anidero.value.AnideroFrameInfo;
 import com.zeoflow.anidero.value.AnideroValueCallback;
 import com.zeoflow.anidero.value.SimpleAnideroValueCallback;
+import com.zeoflow.material.elements.imageview.MaterialImageView;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
@@ -63,7 +63,8 @@ import static com.zeoflow.anidero.RenderMode.HARDWARE;
  *
  * @see <a href="http://airbnb.io/anidero">Full Documentation</a>
  */
-@SuppressWarnings({"unused", "WeakerAccess"}) public class AnideroAnimationView extends AppCompatImageView {
+@SuppressWarnings({"unused", "WeakerAccess"}) public class AnideroAnimationView extends MaterialImageView
+{
 
   private static final String TAG = AnideroAnimationView.class.getSimpleName();
   private static final AnideroListener<Throwable> DEFAULT_FAILURE_LISTENER = new AnideroListener<Throwable>() {
