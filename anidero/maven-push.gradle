@@ -40,6 +40,8 @@ def getRepositoryPassword() {
 }
 
 afterEvaluate { project ->
+  project.generateDebugBuildConfig.enabled = false
+  project.generateReleaseBuildConfig.enabled = false
   uploadArchives {
     repositories {
       mavenDeployer {
