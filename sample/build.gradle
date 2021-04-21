@@ -16,8 +16,8 @@ android {
 			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
 		}
 	}
-	dataBinding {
-		enabled = true;
+	buildFeatures {
+		dataBinding true;
 	}
 
 	lintOptions {
@@ -30,9 +30,7 @@ android {
 }
 
 dependencies {
-	implementation fileTree(dir: "libs", include: ["*.jar"])
-	implementation 'com.zeoflow:flow-kit:1.1.1'
-
 	implementation project(':anidero')
 
+	implementation 'com.zeoflow:flow-kit:1.1.1'
 }
