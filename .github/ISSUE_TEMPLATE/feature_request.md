@@ -2,7 +2,7 @@
 name: Feature request
 about: Suggest an idea for this project
 title: "[Component name] Short description of request"
-labels: feature request
+labels: '@feature'
 assignees: 'TeodorHMX1'
 
 ---
@@ -19,4 +19,4 @@ A clear and concise description of any alternative solutions or features you've 
 **Additional context**
 Add any other context or screenshots about the feature request here.
 
-We also happily accept [pull requests](https://github.com/zeoflow/anidero/pulls).
+###### We also happily accept [pull requests](https://github.com/zeoflow/anidero/pulls).
