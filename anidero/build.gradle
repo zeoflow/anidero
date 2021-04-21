@@ -31,7 +31,4 @@ dependencies {
 
 }
 
-apply from: "${rootProject.projectDir}/anidero/maven-push.gradle"
-repositories {
-    mavenCentral()
-}
+apply from: "${rootProject.projectDir}/buildSrc/upload.gradle"
