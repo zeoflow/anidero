@@ -30,7 +30,7 @@ auto_assign:
   use_review_groups: false
   use_assignee_groups: false
   add_reviewers: true
-  add_assignees: false
+  add_assignees: true
   number_of_assignees: 0
   number_of_reviewers: 0
   review_groups:
@@ -39,6 +39,8 @@ auto_assign:
     - TeodorHMX1
     - Teogor
   assignees_to_add:
+    - TeodorHMX1
+    - Teogor
   skip_keywords:
 
 # Autodelete Merged Branches (AMB)
@@ -96,12 +98,12 @@ license_checker:
     # with extension
     extensions:
       - java
-      - kt
       - xml
   # files to ignore
   to_ignore:
     # with path
     files_path:
+      - sample/
 
 # Draft Release (DR)
 # automatically make a draft release
@@ -145,16 +147,16 @@ draft_release:
       # these labels will influence the next version
       labels:
         - '@security'
-        - '@priority-critical'
         - '@feature'
-        - '@priority-high'
         - '@maintenance'
+        - '@priority-high'
     # patch - version category
     patch:
       # these labels will influence the next version
       labels:
         - '@dependency-update'
         - '@enhancement'
+        - '@priority-critical'
         - '@priority-medium'
         - '@priority-low'
         - '@priority-very-low'
