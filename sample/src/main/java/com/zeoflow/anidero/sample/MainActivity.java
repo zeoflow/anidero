@@ -3,12 +3,11 @@ package com.zeoflow.anidero.sample;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.zeoflow.anidero.AnideroAnimationView;
-import com.zeoflow.compat.ActivityCore;
+import com.zeoflow.app.Activity;
 
-public class MainActivity extends ActivityCore
+public class MainActivity extends Activity
 {
 
     @Override
